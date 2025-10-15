@@ -11,7 +11,7 @@ from plotly.subplots import make_subplots
 # Load and prepare the data
 def load_data():
     """Load and clean the chess games dataset"""
-    df = pd.read_csv('PWT1001.csv')
+    df = pd.read_csv('cleaned_V11.csv')
 
     # Ensure numeric types for columns we use
     df['year'] = pd.to_numeric(df['year'], errors='coerce')
